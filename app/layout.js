@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { GlobalProvider } from "./context/GlobalContext";
+import 'photoswipe/dist/photoswipe.css';
 export const metadata = {
   title: "Property pulse",
    keywords: 'rental, property, real estate',

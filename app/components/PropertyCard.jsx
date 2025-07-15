@@ -23,12 +23,12 @@ function PropertyCard({ property }) {
     <div className="rounded-xl shadow-md relative">
       <Link href={`/properties/${property._id}`}>
       <img
-        src={`/properties/${property.images[0]}`}
+        src={`${property.images[0]}`}
         alt=""
         width="0"
         height="0"
         sizes="100vw"
-        className="w-full h-auto rounded-t-xl"
+        className="w-full h-auto rounded-t-xl propertythumb"
       />
       </Link>
       <div className="p-4">
@@ -52,7 +52,7 @@ function PropertyCard({ property }) {
             <span className="md:hidden lg:inline">Baths</span>
           </p>
           <p>
-            <FaRulerCombined className="md:hidden lg:inline" />
+            <FaRulerCombined className="md:hidden lg:inline" /> 
             {property.square_feet}
             {""} <span className="md:hidden lg:inline">sqft</span>
           </p>

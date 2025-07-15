@@ -1,7 +1,7 @@
 import Image from "next/image";
 import connectDB from "../config/database";
 import { getSessionUser } from "../utils/getSessionUser";
-import profileDefault from "@/public/images/profile.png";
+import profile from '@/public/images/profile.jpeg'
 import User from "../models/User";
 import Property from "../models/Property";
 import ProfileProperties from "../components/ProfileProperties";
@@ -72,10 +72,10 @@ const ProfilePage = async () => {
               <div className="mb-4">
                 <Image
                   className="h-32 w-32 md:h-48 md:w-48 rounded-full mx-auto md:mx-0"
-                  src={user.image || profileDefault}
-                  width={200}
-                  height={200}
-                  alt="User"
+                  src={profile}
+                  width={100}
+                  height={100}
+                  alt="profile"
                 />
               </div>
               <h2 className="text-2xl mb-4">

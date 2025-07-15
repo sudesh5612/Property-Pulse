@@ -21,15 +21,15 @@ const FeaturedPropertyCard = ({ property }) => {
   };
 
   return (
-    <div className='bg-white rounded-xl shadow-md relative flex flex-col md:flex-row'>
+    <div className='bg-white rounded-xl shadow-md relative flex flex-col'>
      <Link href={`/properties/${property._id}`}>
       <img
-        src={`/properties/${property.images[0]}`}
+        src={`${property.images[0]}`}
         alt=""
         width="0"
         height="0"
         sizes="100vw"
-        className="w-full h-auto rounded-t-xl"
+        className="w-full h-auto rounded-t-xl propertythumb"
       />
       </Link>
       <div className='p-6'>
